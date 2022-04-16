@@ -20,25 +20,24 @@
 	<a href="about.html">ABOUT	</a>
 	<a href="activities.php">INITIATE</a>
 	<a href="addOwner.php">OWNER  </a>
-	<a href="refs.html"> REFS </a>
-	<a href="auth.html" style="float:right">LOGOUT</a>
-	<a href="auth.html" style="float:right">MY PROFILE</a>
+	<input type="text" name="search" placeholder="Search Activity">
+	<a href="auth.html" >LOGOUT</a>
+	<a href="auth.html">MY PROFILE</a>
 
-	<input type="text" name="petName" placeholder="Search Activity">
 </div>
 _END;
-	if (isset($_POST['delete_pet'])) {
-		$id = get_post($pdo, 'delete_pet_id');
-		$name = get_post($pdo, 'delete_pet');
-		$query = "DELETE FROM pet WHERE petID = $id";
-		$result = $pdo->query($query);
-		$query = "DELETE FROM ownership WHERE petID = $id";
-		$result = $pdo->query($query);
-		echo "<div class='message'>Success. Pet $name is deleted. Forever.";
-		echo "<br>";
-		echo "<form id='okay' action='index.php' method='post'><input type='submit' value='OKAY'></form></div>";
-	} 
-// ADD OWNER TO DB_________________________________________________________________________________________________________________________
+	// if (isset($_POST['delete_pet'])) {
+	// 	$id = get_post($pdo, 'delete_pet_id');
+	// 	$name = get_post($pdo, 'delete_pet');
+	// 	$query = "DELETE FROM pet WHERE petID = $id";
+	// 	$result = $pdo->query($query);
+	// 	$query = "DELETE FROM ownership WHERE petID = $id";
+	// 	$result = $pdo->query($query);
+	// 	echo "<div class='message'>Success. Pet $name is deleted. Forever.";
+	// 	echo "<br>";
+	// 	echo "<form id='okay' action='index.php' method='post'><input type='submit' value='OKAY'></form></div>";
+	// } 
+/* ADD OWNER TO DB_________________________________________________________________________________________________________________________
 	if (isset($_POST['fullName']) 
 	&&  isset($_POST['street']) 
 	&&  isset($_POST['houseNo'])) {
@@ -58,9 +57,9 @@ _END;
 			echo "<br>";
 		}
 		echo "<form id='okay' action='index.php' method='post'><input type='submit' value='OKAY'></form></div>";
-	}
-	echo "<pre><h2> VOLUNTEER ACTIVITIES </h2></pre>";
-//--------------------------------------------------------------------------------------------
+	} */
+	echo "<br> <h2> VOLUNTEER ACTIVITIES </h2>";
+//-------------------------------------------------------------------------------------------
   if  (isset($_POST['userName']) 
   &&  isset($_POST['password'])) {
     $userName  = get_post($pdo, 'userName');
@@ -125,7 +124,7 @@ Number of Volunteers: $numVolNeeded
 <form action='index.php' method='post'>
 <input type='hidden' name='delete_pet_id' value='$id'>
 <input type='hidden' name='delete_pet' value=$r0>
-<input type='submit' value='ENROLL'></form>
+<input id='enroll' type='submit' value='ENROLL'></form>
 </div>
 _END;
 }

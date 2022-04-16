@@ -100,7 +100,7 @@ INSERT INTO type_of_activity(typeName) VALUES
 	;
 
 INSERT INTO activity (typeID,title,locationID,numVolNeeded,isOutdoor, startTime, hours, schedule, imageURL) VALUES
-	 (5, "Fundraise for housing", 4, 9, TRUE, 11, 4, "MWF", "https://www.thoughtco.com/thmb/mik7Z00SAYN786BQbieXWOzZmc8=/2121x1414/filters:fill(auto,1)/lotus-flower-828457262-5c6334b646e0fb0001dcd75a.jpg")
+	 (5, "Fundraise for housing", 4, 9, TRUE, 11, 4, "MWF", "https://images.squarespace-cdn.com/content/v1/59ca33c0f09ca4a9c58455a9/1513198446747-DSMJPRB4Z7NU0VUMRDFX/4April_FairHousingMonth-e1474527313689.jpg?format=1000w")
 	,(2, "Site filming", 9, 1, TRUE, 13, 4, "MWF", "https://www.thoughtco.com/thmb/mik7Z00SAYN786BQbieXWOzZmc8=/2121x1414/filters:fill(auto,1)/lotus-flower-828457262-5c6334b646e0fb0001dcd75a.jpg")
 	,(5, "Financial Planning", 10, 9, TRUE, 10, 3, "MWF", "https://www.thoughtco.com/thmb/mik7Z00SAYN786BQbieXWOzZmc8=/2121x1414/filters:fill(auto,1)/lotus-flower-828457262-5c6334b646e0fb0001dcd75a.jpg")
 	,(5, "Workshop facilitation", 4, 4, TRUE, 16, 3, "MWF", "https://www.thoughtco.com/thmb/mik7Z00SAYN786BQbieXWOzZmc8=/2121x1414/filters:fill(auto,1)/lotus-flower-828457262-5c6334b646e0fb0001dcd75a.jpg")
